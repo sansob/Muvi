@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.qakap.muvi.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_detail"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/movieImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:padding="0dp"
+                    android:scaleType="centerCrop" />
+
+
+
+                <com.qakap.muvi.customviews.MyTextView_Roboto_Medium
+                    android:id="@+id/movieTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19.21dp"
+                    android:layout_marginTop="19.2dp"
+                    android:layout_marginBottom="8.9dp"
+                    android:textColor="#212224"
+                    android:textSize="15.4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19.2dp"
+                    android:orientation="horizontal">
+
+
+                    <com.qakap.muvi.customviews.MyTextView_Roboto_Light
+                        android:id="@+id/movieShort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="20dp"
+                        android:textSize="13.4dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tablayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        app:tabGravity="fill"
+                        app:tabIndicatorColor="#0070d6"
+                        app:tabMode="fixed"
+                        app:tabSelectedTextColor="#212224"
+                        app:tabTextAppearance="@style/MyMenuTextAppearance1"
+                        app:tabTextColor="#999999" />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="19.2dp"
+        android:elevation="15dp"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingBottom="28.79dp">
+
+        <com.qakap.muvi.customviews.Button_Roboto_Medium
+            android:id="@+id/watchTrailer"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/productpage_rect"
+            android:text="@string/watch_trailer"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

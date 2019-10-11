@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="19.2dp"
+    android:layout_marginTop="19.2dp"
+    android:layout_marginRight="19.2dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_categories_rect"
+        android:orientation="horizontal">
+
+
+        <com.qakap.muvi.customviews.MyTextView_Roboto_Light
+            android:id="@+id/isiReviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="16px"
+            android:textColor="#212224"
+            android:textSize="13sp" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

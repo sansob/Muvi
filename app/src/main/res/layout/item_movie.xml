@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="9.1dp"
+    android:layout_marginRight="9.1dp"
+    android:layout_marginTop="9.1dp">
+
+
+    <ProgressBar
+        android:id="@+id/movie_progress"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:theme="@style/CircularProgress"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageMovie"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="8dp"
+        android:layout_width="160.2dp"
+        android:layout_height="193.50dp"
+        android:layout_marginRight="12dp"/>
+
+</LinearLayout>
